@@ -1,0 +1,37 @@
+-- Genome --
+
+This project is a simple (and not realistic) genetic analysis. It defines genomes for different species and genetic codes for their members (based on their specie genome).
+
+Here is an example of a .genome file (it's not identation sensitive, but it improves readability):
+
+---
+.genome specie
+
+.gene gene_name
+.allele allele_name
+...
+.allele allele_name
+.fenotipe allele_name allele_name "fenotipe return"
+...
+.fenotipe allele_name allele_name "fenotipe return"
+
+...
+.gene gene_name
+...
+---
+
+And it's commands: genome, gene, allele, fenotipe.
+allele_name = '[a-zA-Z][a-zA-Z0-9_]*' or '@'
+
+
+Now, an example of a .code file (also not identation sensitive):
+
+---
+.genome specie
+
+.gene gene_name allele_name allele_name
+...
+.gene gene_name allele_name allele_name
+---
+
+And it's commands: genome, gene.

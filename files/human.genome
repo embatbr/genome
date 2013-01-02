@@ -1,0 +1,70 @@
+.genome human
+
+.gene eye_color
+.allele black
+.allele brown
+.allele green
+.allele blue
+.fenotipe black @ "black eyes"
+.fenotipe brown @ "brown eyes"
+.fenotipe green @ "green eyes"
+.fenotipe @ @ "blue eyes"
+
+.gene skin_color
+.allele black
+.allele brown
+.allele white
+.allele green
+.fenotipe black black "black skin"
+.fenotipe black brown "dark skin"
+.fenotipe black white "brown skin"
+.fenotipe brown brown "brown skin"
+.fenotipe brown white "light skin"
+.fenotipe white white "white skin"
+.fenotipe @ @ "you are from mars"
+
+.gene nose_style
+.allele hooked
+.allele straight
+.allele upright
+.fenotipe hooked @ "hooked nose"
+.fenotipe straight straight "straight nose"
+.fenotipe @ @ "upright nose"
+
+.gene hair_style
+.allele fuzzy
+.allele curly
+.allele straight
+.allele bald    #It's possible to be bald and have a hair color!
+.fenotipe bald @ "egged head"
+.fenotipe fuzzy fuzzy "afro power"
+.fenotipe fuzzy curly "weird afro power"
+.fenotipe fuzzy straight "curly hair"
+.fenotipe curly curly "curly hair"
+.fenotipe curly straight "the waves of your head"
+.fenotipe @ @ "super straight hair"
+
+.gene hair_color
+.allele black
+.allele brown
+.allele blond
+.allele red
+.fenotipe black @ "baratheon blood"
+.fenotipe brown brown "brown hair"
+.fenotipe brown blond "light brown"
+.fenotipe brown red "sunburst"
+.fenotipe blond @ "golden head"
+.fenotipe red red "hair on fire"
+
+.gene height
+.allele tall
+.allele medium
+.allele short
+.allele midgen
+.fenotipe tall tall "treebeard"
+.fenotipe tall medium "tall"
+.fenotipe tall short "medium size"
+.fenotipe medium medium "medium size for the next generations"
+.fenotipe medium short "tall dwarf"
+.fenotipe short short "average dwarf"
+.fenotipe midgen @ "Tyrion Lannister"
