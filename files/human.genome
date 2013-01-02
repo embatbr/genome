@@ -35,7 +35,7 @@
 .allele fuzzy
 .allele curly
 .allele straight
-.allele bald    #It's possible to be bald and have a hair color!
+.allele bald                #It's possible to be bald and have a hair color!
 .fenotipe bald @ "egged head"
 .fenotipe fuzzy fuzzy "afro power"
 .fenotipe fuzzy curly "weird afro power"

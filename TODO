@@ -1,1 +1,3 @@
-- Fazer vários genes atuarem juntos na determinação de um fenótipo.
+- Fazer vários genes atuarem juntos na determinação de um fenótipo. Por exemplo, o gene hair_style com algum alelo 'bald' (careca) deve inibir o fenótipo cor do cabelo (embora também dê cor aos pelos do corpo).
+
+- Criar classe UnknownFenotipe, para permitir o aparecimento de configurações desconhecidas no código genético dos indivíduos. Desta forma evita parar tudo com RuntimeError.

@@ -36,6 +36,7 @@ if __name__ == '__main__' and arguments[0] == '--genome':
 
 if __name__ == '__main__' and arguments[0] == '--scan':
     filename = '%s' % arguments[1]
+    
     f = open('files/%s.genome' % filename)
     string = f.read()
     tokens = translate.scan(string)
