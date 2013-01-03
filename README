@@ -1,8 +1,8 @@
 -- Genome --
 
-This project is a simple (and not realistic) genetic analysis. It defines genomes for different species and genetic codes for their members (based on their specie genome).
+This project is a simple (and not realistic) genetic tool. It defines genomes for different species and genetic codes for their members (based on their specie genome).
 
-Here is an example of a .genome file (it's not identation sensitive, but it improves readability):
+Here is an example of a .genome file (it's not identation sensitive):
 
 ---
 .genome specie
@@ -21,7 +21,7 @@ Here is an example of a .genome file (it's not identation sensitive, but it impr
 ---
 
 And it's commands: genome, gene, allele, fenotipe.
-allele_name = '[a-zA-Z][a-zA-Z0-9_]*' or '@'
+The 'allele_name' can '[a-zA-Z][a-zA-Z0-9_]*' or '@', where '@' means 'don't care about the value'.
 
 
 Now, an example of a .code file (also not identation sensitive):

@@ -1,4 +1,5 @@
 #!/bin/bash
 
-rm -Rf src/__pycache__
+./clean.sh
 python3.3 src/main.py $@
+echo "python3.3 src/main.py $@"

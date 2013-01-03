@@ -1,8 +1,8 @@
 #!/usr/bin/python3.3
 
 """
-The defines module has functionalities to define and work with genes, genomes and
-specific genetic codes.
+The 'defines' module has functionalities to define and work with genes, genomes
+and specific genetic codes.
 """
 
 
@@ -220,6 +220,9 @@ class GenomeCode:
 
 
 def random_gene_code(gene):
+    """
+    Generates a random GeneCode object.
+    """
     allele1 = random.choice(10*gene.alleles)
     allele2 = random.choice(10*gene.alleles)
 
@@ -227,6 +230,9 @@ def random_gene_code(gene):
     return ret
 
 def random_genome_code(name, genome):
+    """
+    Generates a random GenomeCode object.
+    """
     ret = GenomeCode(name, genome)
     for gene in genome.genes:
         gene_code = random_gene_code(gene)
