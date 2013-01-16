@@ -12,9 +12,9 @@ Default library imports.
 import random
 
 
-class Fenotipe:
+class Fenotipe(object):
     """
-    A fenotipe for a gene (allele1, allele2, fenotipe_output).
+    A fenotipe for a gene (allele1, allele2, fenotipe).
     """
     def __init__(self, allele1, allele2, fenotipe):
         self.alleles = (allele1, allele2)
@@ -41,7 +41,7 @@ class Fenotipe:
         return None
 
 
-class FenotipeGroup:
+class FenotipeGroup(object):
     """
     The group of Fenotipe objects. It is all the possible fenotipes for a gene.
     """
@@ -159,28 +159,26 @@ class Genome(object):
         return None
         
 
-class GeneCode:
+class GeneCode(object):
     """
     A "instance" of a Gene. A GeneCode contains a reference to the Gene object
     it takes it's information and two alleles (it's configuration).
     """
     def __init__(self, gene, allele1, allele2):
+        """
+        Alleles must NOT be modified. If necessary, create another object.
+        """
         self.gene = gene
         self.allele1 = allele1
         self.allele2 = allele2
+        self.fenotipe = self.gene.fenotipe(self.allele1, self.allele2)
 
     def __str__(self):
         ret = '.gene %s %s %s' % (self.gene.name, self.allele1, self.allele2)
         return ret
 
-    def fenotipe(self):
-        """
-        Show the fenotipe for this gene configuration.
-        """
-        return self.gene.fenotipe(self.allele1, self.allele2)
 
-
-class GenomeCode:
+class GenomeCode(object):
     """
     A GenomeCode is a "instance" of a Genome. It contains a set of GeneCode
     objects.
@@ -214,7 +212,7 @@ class GenomeCode:
         """
         ret = ''
         for g in self.gene_codes:
-            ret = '%s%s\n' % (ret, g.fenotipe())
+            ret = '%s%s\n' % (ret, g.fenotipe)
 
         return ret
 
